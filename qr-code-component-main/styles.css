@@ -40,7 +40,7 @@
 
 .qr-container p{
     font-size: 15px;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 30px 20px;
     color: var(--Grayish-blue);
     font-weight: 400;
 
@@ -72,7 +72,7 @@
 
     .qr-container p{
         font-size: 12px;
-        padding:0px 20px 20px 20px;
+        padding:0px 20px 30px 20px;
     }
     
     .attribution{
