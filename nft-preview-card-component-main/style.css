@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --dark-blue:hsl(216, 50%, 16%);
+    --soft-blue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+}
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: "outfit",serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    background-color:var(--very-dark-blue);
+}
+
+.card img{
+    height:260px;
+    border-radius:10px;
+}
+
+.card{
+    width:300px;
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.img-icon-container{
+    position:relative;
+}
+
+.icon{
+    display:none;
+}
+
+.img-bg{
+    position:absolute;
+    height:260px;
+    width:260px;
+    border-radius:10px;
+    background-color:var(--cyan);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity:20%;
+}
+
+
+.img-icon-container .icon svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    
+}
+
+.card h1{
+    color:var(--white);
+    font-weight:600;
+    padding: 15px 0px;
+    font-size: 18px;
+}
+
+.card > p{
+    color:var(--soft-blue);
+    font-weight:400;
+    font-size:15px;
+    padding: 5px 0px 20px 0px;
+}
+
+
+hr{
+    border:.25px solid hsl(215, 32%, 27%);
+    margin-top:15px;
+
+}
+
+.eth-clk-container{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.eth,.clk{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:14px;
+}
+
+.eth > p{
+    color:var(--cyan);
+    font-weight: 400;
+}
+
+.clk > p{
+    color:var(--soft-blue);
+    font-weight: 300;
+}
+
+.avatar-container{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:10px ;
+    padding-top:4px;
+
+}
+
+.avatar-container > img{
+    height:30px;
+    border:1px solid white;
+    border-radius: 50%;
+}
+
+.avatar-container > p{
+    color:var(--soft-blue);
+    font-weight:300;
+    font-size:14px;
+}
+
+.avatar-container a{
+    text-decoration:none;
+    color:var(--white);
+    font-size:16px;
+}
+
+.card > h1:hover{
+    color:var(--cyan);
+    cursor:pointer;
+}
+
+.img-icon-container img:hover + .icon, .icon:hover{
+    display:block;
+    cursor:pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.avatar-container p > a:hover{
+    color:var(--cyan);
+    cursor:pointer;
+}
+
+.attribution { font-size: 14px; text-align: center;padding:30px; }
+.attribution a { color: hsl(228, 45%, 44%); }
