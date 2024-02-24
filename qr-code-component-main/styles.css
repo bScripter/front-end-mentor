@@ -23,7 +23,7 @@
 }
 
 .qr-container{
-    width:300px;
+    width:280px;
     background-color:var(--White);
     padding:15px;
     border-radius:20px;
@@ -46,7 +46,7 @@
 
 }
 .qr-container img{
-    height:300px;
+    height:280px;
     border-radius:10px;
 }
 
