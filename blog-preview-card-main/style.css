@@ -1,0 +1,116 @@
+@font-face{
+    font-family:figtree;
+    src: url('/assets/fonts/Figtree-VariableFont_wght.ttf');
+    font-weight:100,200,300,400,500,600,700,800,900;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    font-family:"figtree";
+    
+}
+
+
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    background:var(--yellow);
+
+}
+
+.card{
+    width:380px;
+    height:500px;
+    background: var(--white);
+    border-radius:10px;
+    box-shadow: 10px 9px 0 var(--black);
+    border: 2px solid var(--black);
+}
+
+.card img{
+    height:205px;
+    display:block;
+    border-radius:10px;
+    margin: 23px auto;
+}
+
+.title-caption{
+    font-size:14px;
+    background:var(--yellow);
+    display:inline;
+    padding:5px 13px;
+    margin-left:23px;
+    border-radius:5px;
+    width:81px;
+}
+
+.title-desc{
+    margin-top:14px;
+    margin-left:23px;
+    font-size:12px;
+    font-size:900;
+    font-weight:600;
+}
+
+.course-title{
+    margin-top:20px;
+    margin-left:23px;
+    font-size:20px;
+    margin-bottom:20px;
+    font-weight: 900;
+}
+
+.course-desc{
+    margin-left:23px;
+    font-size:16px;
+    color:var(--grey);
+    margin-bottom:25px;
+}
+
+.instructor{
+    display:flex;
+    align-items:center;
+}
+
+.card .avatar{
+    height:30px;
+    margin:0px 10px 20px 23px;
+}
+
+.instructor  h2{
+    font-size:13px;
+    margin-bottom:20px;
+    font-weight: 900;
+    
+}
+
+.course-title:hover{
+    color:var(--yellow);
+    cursor:pointer;
+}
+
+.attribution { font-size: 20px; text-align: center;padding:20px }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width:375px){
+    .card{
+        width:323px;
+        height:475px;
+    }
+
+    .card > img{
+        height:175px;
+    }
+  
+}
